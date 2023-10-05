@@ -1,10 +1,18 @@
 package com.practica.demojenkins.controller;
 
-import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.web.servlet.MockMvc;
 
 public class MyControllerTest {
-    @Test
-    void testHello() {
+    @Autowired
+    private MockMvc mockMvc;
 
-    }
+    @Mock
+    private MyController myController;
+
+    private AutoCloseable autoCloseable;
+
+
+    
 }
